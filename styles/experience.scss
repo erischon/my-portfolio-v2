@@ -5,6 +5,7 @@
   margin-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  justify-content: flex-start;
 
   background-color: brown;
 
@@ -13,5 +14,19 @@
     width: 100%;
     margin: 2rem auto;
     justify-content: center;
+  }
+
+  .experience_container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .container__left {
+      background-color: aqua;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
