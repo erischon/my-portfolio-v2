@@ -1,0 +1,39 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .hero__title {
+    h1 {
+      margin: 0;
+
+      font-family: $ff-secondary;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin: 0;
+
+      font-family: $ff-secondary;
+      color: #8892b0;
+      font-weight: 600;
+      font-size: 1.85rem;
+    }
+  }
+
+  p {
+    font-family: $ff-secondary;
+    font-size: 0.85rem;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
