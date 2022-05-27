@@ -1,3 +1,8 @@
+@import "./variables.scss";
+
+@import "./header.scss";
+@import "./hero.scss";
+
 /* @tailwind base; */
 /* @tailwind components; */
 /* @tailwind utilities; */
@@ -9,8 +14,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Source Code Pro", monospace;
-  background-color: #0a192f;
+  font-family: $ff-primary;
+  background-color: $clr-background;
   color: #ccd6f6;
 
   @media screen and (min-width: 768px) {
@@ -26,8 +31,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@import "./variables.scss";
-
-@import "./header.scss";
-@import "./hero.scss";

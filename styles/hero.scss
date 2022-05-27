@@ -1,13 +1,19 @@
 .hero {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
   height: 100vh;
   margin-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: aliceblue;
 
   .hero__title {
     h1 {
@@ -33,7 +39,18 @@
     font-size: 0.85rem;
   }
 
-  button {
+  a {
     margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border: solid 1px $clr-secondary;
+    border-radius: 0.25rem;
+    background-color: $clr-background;
+    color: $clr-secondary;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $clr-background-light;
+    }
   }
 }
