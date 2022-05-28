@@ -1,0 +1,17 @@
+.works__container {
+  //   background-color: aqua;
+
+  .work__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: $clr-secondary;
+
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

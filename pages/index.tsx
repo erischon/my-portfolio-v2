@@ -7,14 +7,14 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Work from "../components/Work";
 
-const Home: NextPage = ({ experiences, services }: any) => {
+const Home: NextPage = ({ experiences, services, works }: any) => {
   return (
     <div>
       <Header />
       <Hero />
       <About services={services} />
       <Experience experiences={experiences} />
-      <Work />
+      <Work works={works} />
     </div>
   );
 };
@@ -35,10 +35,21 @@ export const getServerSideProps = async () => {
     icon,
   }`;
 
+  const queryWorks = `*[_type == "works"] {
+    title,
+    description,
+    projectLink,
+    codeLink,
+    featured,
+    imageUrl,
+    tags[],
+  }`;
+
   const services = await client.fetch(queryServices);
   const experiences = await client.fetch(queryExperiences);
+  const works = await client.fetch(queryWorks);
 
   return {
-    props: { experiences, services },
+    props: { experiences, services, works },
   };
 };
