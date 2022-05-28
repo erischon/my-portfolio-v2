@@ -1,5 +1,6 @@
 .experience {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   margin-top: 1rem;
@@ -7,7 +8,7 @@
   padding-right: 2rem;
   justify-content: flex-start;
 
-  background-color: brown;
+  // background-color: brown;
 
   @media screen and (min-width: 640px) {
     max-width: 1024px;
@@ -16,17 +17,80 @@
     justify-content: center;
   }
 
-  .experience_container {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+  .container__header {
+    margin-bottom: 1.5rem;
 
-    .container__left {
-      background-color: aqua;
-      ul {
-        display: flex;
-        flex-direction: column;
+    // background-color: brown;
+    h2 {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:before {
+        content: "+";
+        margin-right: 0.5rem;
+        color: $clr-secondary;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: 45%;
+        margin-left: 1rem;
+        content: "";
+        width: 10rem;
+        height: 0.1rem;
+        background-color: $clr-secondary;
+        // transform: rotate(90deg) translate(16px, 3px);
       }
     }
+  }
+
+  .experience_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+
+    .experience__card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+
+      .card__period {
+        font-size: 0.65rem;
+      }
+
+      .card__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: $ff-secondary;
+      }
+
+      .card__desc {
+        p {
+          margin-bottom: 0.6rem;
+          font-size: 0.85rem;
+          color: $clr-text-light;
+
+          &:before {
+            content: ".";
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 0.4rem;
+            font-size: 0.7rem;
+            font-weight: 900;
+            color: $clr-secondary;
+          }
+        }
+      }
+
+      // background-color: bisque;
+    }
+
+    // background-color: aqua;
   }
 }

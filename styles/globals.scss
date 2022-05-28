@@ -32,3 +32,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text--secondary {
+  color: $clr-secondary;
+}

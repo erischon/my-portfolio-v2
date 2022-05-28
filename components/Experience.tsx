@@ -1,23 +1,25 @@
-import { useState } from "react";
-import experience from "../data/experience";
-
-const Experience = () => {
-  const [toggle, setToggle] = useState(false);
-
+const Experience = ({ experiences }: any) => {
+  console.log(experiences[1].desc);
   return (
     <section className="experience" id="Experience">
+      <div className="container__header">
+        <h2>Expérience</h2>
+      </div>
       <div className="experience_container">
-        <div className="container__left">
-          <ul>
-            {experience.map((job, index) => (
-              <div key={index} className="">
-                <li onClick={() => setToggle(!toggle)}>{job.nom}</li>
-                {toggle ? <div className="box">{job.desc}</div> : ""}
-              </div>
-            ))}
-          </ul>
-        </div>
-        {/* <div className="container__right"></div> */}
+        {experiences.map((job: any, index: any) => (
+          <div key={index} className="experience__card">
+            <p className="card__period">{job.period}</p>
+            <h3 className="card__title">
+              {job.position}{" "}
+              <span className="text--secondary">@ {job.company}</span>
+            </h3>
+            <div className="card__desc">
+              {job.desc.map((description: any, index: any) => (
+                <p key={index}>{description}</p>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
