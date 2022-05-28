@@ -2,13 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { urlFor } from "../lib/sanity";
 
-import iconFolder from "../public/images/streamlinehq-folder-open-files-folders-48.png";
-import iconGit from "../public/images/streamlinehq-developers-comunities-git-logos-48.png";
-import iconLink from "../public/images/streamlinehq-link-hyperlink-chain-interface-essential-48.png";
+import iconFolder from "../public/images/iconFolder.png";
+import iconGit from "../public/images/iconGit.png";
+import iconLink from "../public/images/iconLink.png";
 
 const Work = ({ works }: any) => {
-  console.log(works);
-
   return (
     <section className="section" id="Work">
       <div className="container__header">
