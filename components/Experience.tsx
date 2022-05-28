@@ -1,7 +1,6 @@
 const Experience = ({ experiences }: any) => {
-  console.log(experiences[1].desc);
   return (
-    <section className="experience" id="Experience">
+    <section className="section" id="Experience">
       <div className="container__header">
         <h2>Expérience</h2>
       </div>

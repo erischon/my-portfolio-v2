@@ -3,13 +3,15 @@ import { client } from "../lib/sanity";
 
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import About from "../components/About";
 import Experience from "../components/Experience";
 
-const Home: NextPage = ({ experiences }: any) => {
+const Home: NextPage = ({ experiences, services }: any) => {
   return (
     <div>
       <Header />
       <Hero />
+      <About services={services} />
       <Experience experiences={experiences} />
     </div>
   );
@@ -25,9 +27,16 @@ export const getServerSideProps = async () => {
     desc[],
   }`;
 
+  const queryServices = `*[_type == "services"] {
+    title,
+    description,
+    icon,
+  }`;
+
+  const services = await client.fetch(queryServices);
   const experiences = await client.fetch(queryExperiences);
 
   return {
-    props: { experiences },
+    props: { experiences, services },
   };
 };
