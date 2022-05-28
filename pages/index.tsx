@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import Work from "../components/Work";
 
 const Home: NextPage = ({ experiences, services }: any) => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = ({ experiences, services }: any) => {
       <Hero />
       <About services={services} />
       <Experience experiences={experiences} />
+      <Work />
     </div>
   );
 };
