@@ -41,7 +41,13 @@ const About = () => {
 
         <div className="container__right">
           <div className="img__me">
-            <Image src={me} alt="Eri Schön" />
+            <Image
+              src={me}
+              alt="Eri Schön"
+              width={270}
+              height={270}
+              layout="intrinsic"
+            />
           </div>
         </div>
       </div>
