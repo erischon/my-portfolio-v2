@@ -11,7 +11,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <a href="#">Contactez-moi!</a>
+        <a href="mailto:erischon@gmail.com">Contactez-moi!</a>
       </div>
     </section>
   );
