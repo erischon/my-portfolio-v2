@@ -15,7 +15,7 @@ const About = () => {
         <div className="container__left">
           <p>
             Je suis un Développeur Web Full Stack Freelance ayant une expertise
-            en création, modification et entretien d’applications Web.
+            en création, modification et entretien d&apos;applications Web.
           </p>
 
           <div className="skills__container">

@@ -7,7 +7,7 @@ const Hero = () => {
           <h1>Je fabrique des apps web.</h1>
           <p>
             Je suis un Artisan Développeur Full Stack spécialisé dans la
-            construction d'application web. Je suis actuellement Freelance
+            construction d&apos;application web. Je suis actuellement Freelance
             Full-Remote.
           </p>
         </div>
