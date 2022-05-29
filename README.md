@@ -4,12 +4,12 @@ Mon Portfolio
 
 ### Stack
 
-. HTML
-. SaSS
-. Typescript
-. React
-. Next.js
-. Sanity
+- HTML
+- SaSS
+- Typescript
+- React
+- Next.js
+- Sanity
 
 
 # Versions
@@ -17,7 +17,7 @@ Mon Portfolio
 
 ### Thanks to
 
-. [Brittany Chiang v4](https://github.com/bchiang7/v4) who inspired me the Design
+- [Brittany Chiang v4](https://github.com/bchiang7/v4) who inspired me the Design
 
 
 
