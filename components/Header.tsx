@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
 import { RiMenu5Fill } from "react-icons/ri";
+import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 import { motion } from "framer-motion";
 
 import logo from "../public/images/logo-fff-es.png";
@@ -44,6 +45,33 @@ const Header = () => {
           )}
         </div>
       </nav>
+
+      <div className="social__container">
+        <a
+          href="https://twitter.com/erischon"
+          className="home__social--link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoTwitter />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ericschonhofen/"
+          className="home__social--link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoLinkedin />
+        </a>
+        <a
+          href="https://github.com/erischon"
+          className="home__social--link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoGithub />
+        </a>
+      </div>
     </header>
   );
 };

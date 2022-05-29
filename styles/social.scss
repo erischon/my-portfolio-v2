@@ -1,0 +1,33 @@
+.social__container {
+  display: none;
+
+  @media screen and (min-width: 868px) {
+    display: flex;
+    gap: 0.5rem;
+
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 14rem;
+    transform: rotate(90deg) translate(1rem, 4rem);
+
+    &:after {
+      position: absolute;
+      bottom: 45%;
+      left: 100%;
+      margin-left: 0.5rem;
+      margin-right: 4rem;
+      content: "";
+      width: 8rem;
+      height: 0.1rem;
+      background-color: $clr-background-light;
+    }
+
+    a {
+      font-size: 1.25rem;
+      color: $clr-text-light;
+      transform: rotate(-90deg);
+      margin-right: 1rem;
+    }
+  }
+}
