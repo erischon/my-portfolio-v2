@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { urlFor } from "../lib/sanity";
 
-import iconFolder from "../public/images/iconFolder.png";
 import iconGit from "../public/images/iconGit.png";
 import iconLink from "../public/images/iconLink.png";
 
