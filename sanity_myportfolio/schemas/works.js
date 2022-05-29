@@ -15,6 +15,11 @@ export default {
       type: "string",
     },
     {
+      name: "buildedAt",
+      title: "Builded at",
+      type: "date",
+    },
+    {
       name: "projectLink",
       title: "Project Link",
       type: "string",
