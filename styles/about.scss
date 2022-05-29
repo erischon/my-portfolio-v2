@@ -8,8 +8,10 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 0;
+
+    // background-color: aqua;
   }
 
   .container__left {
@@ -18,6 +20,10 @@
     padding-right: 1rem;
 
     color: $clr-text-light;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 1rem;
+    }
   }
 
   .container__right {
@@ -89,6 +95,40 @@
         margin-bottom: 0.6rem;
         font-size: 0.75rem;
         color: $clr-text-light;
+      }
+    }
+  }
+}
+
+.skills__container {
+  margin-top: 1rem;
+
+  p {
+    color: $clr-text-light;
+  }
+
+  .skills__box {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+
+    // background-color: aqua;
+  }
+
+  .skills__list {
+    font-size: 0.8rem;
+
+    li {
+      list-style: none;
+
+      &:before {
+        content: ".";
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.4rem;
+        font-size: 0.7rem;
+        font-weight: 900;
+        color: $clr-secondary;
       }
     }
   }

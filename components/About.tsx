@@ -13,11 +13,29 @@ const About = ({ services }: any) => {
       <div className="about_container">
         <div className="container__left">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            reprehenderit enim quas numquam temporibus omnis necessitatibus et
-            aliquid ipsam iste! Labore aperiam mollitia a ea dolores, itaque
-            nihil doloribus adipisci.
+            Je suis un Développeur Web Full Stack Freelance ayant une expertise
+            en création, modification et entretien d’applications Web.
           </p>
+
+          <div className="skills__container">
+            <p>En ce moment je travaille plutôt avec:</p>
+            <div className="skills__box">
+              <div className="skills__list">
+                <ul>
+                  <li>HTML</li>
+                  <li>SaSS</li>
+                  <li>Typescript</li>
+                </ul>
+              </div>
+              <div className="skills__list">
+                <ul>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Sanity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="container__right">
