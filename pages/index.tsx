@@ -4,6 +4,7 @@ import { client } from "../lib/sanity";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Services from "../components/Services";
 import Experience from "../components/Experience";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
@@ -13,7 +14,8 @@ const Home: NextPage = ({ experiences, services, works }: any) => {
     <div>
       <Header />
       <Hero />
-      <About services={services} />
+      <About />
+      <Services services={services} />
       <Experience experiences={experiences} />
       <Work works={works} />
       <Footer />
