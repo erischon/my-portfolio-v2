@@ -28,6 +28,10 @@
       color: $clr-text-light;
       transform: rotate(-90deg);
       margin-right: 1rem;
+
+      &:hover {
+        color: $clr-secondary;
+      }
     }
   }
 }
