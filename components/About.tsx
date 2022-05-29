@@ -34,8 +34,8 @@ const About = ({ services }: any) => {
               <Image
                 src={urlFor(service.icon).url()}
                 alt={service.title}
-                width={22}
-                height={22}
+                width={26}
+                height={26}
               />
             </div>
             <div className="service__desc">
