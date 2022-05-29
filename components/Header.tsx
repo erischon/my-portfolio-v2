@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import logo from "../public/images/logo-fff-es.png";
 
 const Header = () => {
-  const menuLink = ["About", "Experience", "Work", "Contact"];
+  const menuLink = ["About", "Experience", "Work"];
 
   const [toggle, setToggle] = useState(false);
 
