@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { client } from "../lib/sanity";
+import Head from "next/head";
 
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -12,6 +13,14 @@ import Footer from "../components/Footer";
 const Home: NextPage = ({ experiences, services, works }: any) => {
   return (
     <div>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Eri Schön</title>
+      </Head>
+
       <Header />
       <Hero />
       <About />
