@@ -8,16 +8,15 @@ export default {
       title: "Title",
       type: "string",
     },
-
     {
       name: "description",
       title: "Description",
       type: "string",
     },
     {
-      name: "buildedAt",
-      title: "Builded at",
-      type: "date",
+      name: "projectType",
+      title: "Project Type",
+      type: "string",
     },
     {
       name: "projectLink",
@@ -30,6 +29,11 @@ export default {
       type: "string",
     },
     {
+      name: "updatedAt",
+      title: "Updated at",
+      type: "date",
+    },
+    {
       name: "featured",
       title: "Featured",
       type: "boolean",
@@ -37,7 +41,7 @@ export default {
     },
     {
       name: "imgUrl",
-      title: "ImageUrl",
+      title: "Image",
       type: "image",
       options: {
         hotspot: true,

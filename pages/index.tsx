@@ -39,7 +39,7 @@ export const getServerSideProps = async () => {
     icon,
   }`;
 
-  const queryWorks = `*[_type == "works"] | order(buildedAt desc) {
+  const queryWorks = `*[_type == "works"] | order(updatedAt desc) {
     title,
     description,
     projectLink,
