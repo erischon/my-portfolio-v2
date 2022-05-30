@@ -1,14 +1,17 @@
 .hero {
   display: flex;
   width: 100%;
+  height: 100%;
   margin-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   @media screen and (min-width: 640px) {
     max-width: 768px;
     width: 100%;
     margin: 2rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -23,13 +26,18 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 0.5rem;
+
+    .hero__intro {
+      // font-style: italic;
+    }
 
     h1 {
       margin: 0;
 
       font-family: $ff-secondary;
       font-weight: 900;
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     h2 {
@@ -38,10 +46,10 @@
       font-family: $ff-secondary;
       color: #8892b0;
       font-weight: 700;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
 
-    p {
+    .hero__subtitle {
       margin-top: 0.5rem;
       // font-family: $ff-secondary;
       font-size: 0.85rem;
