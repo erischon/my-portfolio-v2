@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { client } from "../lib/sanity";
+import { client, urlFor } from "../lib/sanity";
 import Head from "next/head";
 
 import Header from "../components/Header";
@@ -10,13 +10,30 @@ import Experience from "../components/Experience";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
 
-const Home: NextPage = ({ experiences, services, works }: any) => {
+const Home: NextPage = ({ experiences, services, works, seo }: any) => {
+  const seoData = seo[0];
+
   return (
     <div>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* SEO */}
+        <meta name="description" content={seoData.description} />
+        <meta name="image" content={seoData.image} />
+
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.description} />
+        <meta property="og:image" content={urlFor(seoData.image).url()} />
+        <meta property="og:url" content={seoData.url} />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:creator" content={seoData.twitterUsername} />
+        <meta name="twitter:title" content={seoData.title} />
+        <meta name="twitter:description" content={seoData.description} />
+        <meta name="twitter:image" content={urlFor(seoData.image).url()} />
 
         <title>Eri Schön</title>
       </Head>
@@ -58,11 +75,20 @@ export const getServerSideProps = async () => {
     tags[],
   }`;
 
+  const querySeo = `*[_type == "seo"] {
+    title,
+    description,
+    image,
+    url,
+    twitterUsername
+  }`;
+
   const services = await client.fetch(queryServices);
   const experiences = await client.fetch(queryExperiences);
   const works = await client.fetch(queryWorks);
+  const seo = await client.fetch(querySeo);
 
   return {
-    props: { experiences, services, works },
+    props: { experiences, services, works, seo },
   };
 };
