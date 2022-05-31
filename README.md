@@ -18,18 +18,11 @@ Mon Portfolio
 
 ### 0.1.0
 
+- 0.1.0-a.2
+    - Intégration du SEO dans le <head>
+    - Ajout des liens vers les Réseaux Sociaux dans le Footer
 - 0.1.0-a.1
-    - [x]  Page fonctionnelle
-        - [x]  Design Responsive
-        - [x]  Sections présentes :
-            - [x]  Header
-            - [x]  Hero
-            - [x]  About
-            - [x]  services
-            - [x]  Experience
-            - [x]  Work
-            - [x]  Social Media (on desktop)
-            - [x]  Footer
+    - Page fonctionnelle avec : une barre de navigation, un Hero avec CTA, des sections About, Services, Experience et Work, un Footer.
 
 
 ### Thanks to
