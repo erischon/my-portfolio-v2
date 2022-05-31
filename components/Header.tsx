@@ -2,8 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
 import { RiMenu5Fill } from "react-icons/ri";
-import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
-import { motion } from "framer-motion";
+import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
 
 import logo from "../public/images/logo-fff-es.png";
 
@@ -53,7 +52,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoTwitter />
+          <FiTwitter />
         </a>
         <a
           href="https://www.linkedin.com/in/ericschonhofen/"
@@ -61,7 +60,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoLinkedin />
+          <FiLinkedin />
         </a>
         <a
           href="https://github.com/erischon"
@@ -69,7 +68,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoGithub />
+          <FiGithub />
         </a>
       </div>
     </header>

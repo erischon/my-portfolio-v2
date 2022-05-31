@@ -1,10 +1,35 @@
 .footer {
   display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0 2rem;
+
+  @media screen and (min-width: 640px) {
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 
   .footer__copy {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .social__container--footer {
+    @media screen and (min-width: 868px) {
+      display: none;
+    }
+
+    a {
+      font-size: 1rem;
+      color: $clr-text-light;
+      margin-right: 1rem;
+
+      &:hover {
+        color: $clr-secondary;
+      }
+    }
   }
 }
