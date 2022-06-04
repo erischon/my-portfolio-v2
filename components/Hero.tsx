@@ -7,9 +7,9 @@ const Hero = () => {
         <div className="hero__title">
           <p className="hero__intro text--secondary">Bonjour, je suis</p>
           <h2>Eri Schön.</h2>
-          <h1 dangerouslySetInnerHTML={{ __html: copy[0].heroTitle }}>
-            {/* Je <span className="title--underline">confectionne</span> des apps
-            web. */}
+          <h1>
+            Je <span className="title--underline">confectionne</span> des apps
+            web.
           </h1>
           <p className="hero__subtitle">
             Je suis un Artisan Développeur spécialisé dans la confection
