@@ -11,7 +11,10 @@ const Hero = () => {
           </h1>
           <p className="hero__subtitle">
             Je suis un Artisan Développeur spécialisé dans la confection
-            d&apos;applications web de qualités.
+            d&apos;applications web{" "}
+            <span className="text--secondary">Fluides</span>,{" "}
+            <span className="text--secondary">Rapides</span> et{" "}
+            <span className="text--secondary">Fiables</span>.
           </p>
         </div>
 
