@@ -37,6 +37,10 @@
       font-family: $ff-secondary;
       font-weight: 900;
       font-size: 3.5rem;
+
+      .title--underline {
+        text-decoration: underline;
+      }
     }
 
     h2 {

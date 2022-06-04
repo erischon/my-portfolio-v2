@@ -5,11 +5,13 @@ const Hero = () => {
         <div className="hero__title">
           <p className="hero__intro text--secondary">Bonjour, je suis</p>
           <h2>Eri Schön.</h2>
-          <h1>Je fabrique des apps web.</h1>
+          <h1>
+            Je <span className="title--underline">confectionne</span> des apps
+            web.
+          </h1>
           <p className="hero__subtitle">
-            Je suis un Artisan Développeur Full Stack spécialisé dans la
-            construction d&apos;application web. Je suis actuellement Freelance
-            Full-Remote.
+            Je suis un Artisan Développeur spécialisé dans la confection
+            d&apos;applications web de qualités.
           </p>
         </div>
 
