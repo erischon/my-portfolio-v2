@@ -21,6 +21,10 @@
 
     color: $clr-text-light;
 
+    p {
+      margin-bottom: 0.5rem;
+    }
+
     @media screen and (min-width: 768px) {
       margin-top: 1rem;
     }
@@ -104,13 +108,15 @@
 
   .skills__box {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 1rem;
     margin-top: 1rem;
     width: 100%;
 
-    @media screen and (min-width: 768px) {
-      gap: 4rem;
+    @media screen and (min-width: 640px) {
+      flex-direction: row;
+      gap: 2rem;
     }
   }
 

@@ -14,8 +14,16 @@ const About = () => {
       <div className="about_container">
         <div className="container__left">
           <p>
-            Je suis un Développeur Web Full Stack Freelance ayant une expertise
-            en création, modification et entretien d&apos;applications Web.
+            Bonjour, je suis Eri, je suis tombé dans l’univers du Web en 1995 et
+            depuis je ne l’ai pas quitté.
+          </p>
+          <p>
+            Aujourd’hui je suis Développeur Web Full Stack Freelance en full
+            remote.
+          </p>
+          <p>
+            J’ai une expertise en création, modification et entretien
+            d&apos;applications Web.
           </p>
 
           <div className="skills__container">
@@ -24,7 +32,7 @@ const About = () => {
               <div className="skills__list">
                 <ul>
                   <li>HTML</li>
-                  <li>SaSS</li>
+                  <li>Sass</li>
                   <li>Typescript</li>
                 </ul>
               </div>
@@ -33,6 +41,13 @@ const About = () => {
                   <li>React</li>
                   <li>Next.js</li>
                   <li>Sanity</li>
+                </ul>
+              </div>
+              <div className="skills__list">
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
                 </ul>
               </div>
             </div>
