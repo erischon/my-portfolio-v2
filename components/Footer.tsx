@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className="footer">
       <span className="footer__copy">
-        &copy; {new Date().getFullYear()} Eri Schön All rights reserved
+        &copy; 2022-{new Date().getFullYear()} Eri Schön All rights reserved
       </span>
 
       <div className="social__container--footer">
