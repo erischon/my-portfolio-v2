@@ -33,14 +33,14 @@ const About = () => {
                 <ul>
                   <li>HTML</li>
                   <li>Sass</li>
-                  <li>Typescript</li>
+                  <li>Javascript</li>
                 </ul>
               </div>
               <div className="skills__list">
                 <ul>
+                  <li>Typescript</li>
                   <li>React</li>
                   <li>Next.js</li>
-                  <li>Sanity</li>
                 </ul>
               </div>
               <div className="skills__list">
