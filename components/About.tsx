@@ -18,7 +18,7 @@ const About = () => {
             depuis je ne l’ai pas quitté.
           </p>
           <p>
-            Aujourd’hui je suis Développeur Web Full Stack Freelance en full
+            Aujourd’hui je suis Développeur Frontend React Freelance en full
             remote.
           </p>
           <p>
