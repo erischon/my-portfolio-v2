@@ -24,5 +24,10 @@ export default {
       type: "array",
       of: [{ type: "string" }],
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+    },
   ],
 };

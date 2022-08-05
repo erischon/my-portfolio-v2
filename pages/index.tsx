@@ -10,7 +10,13 @@ import Experience from "../components/Experience";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
 
-const Home: NextPage = ({ experiences, services, works, seo }: any) => {
+const Home: NextPage = ({
+  experiences,
+  services,
+  works,
+  featured,
+  seo,
+}: any) => {
   const seoData = seo[0];
 
   return (
@@ -61,7 +67,7 @@ const Home: NextPage = ({ experiences, services, works, seo }: any) => {
       <About />
       <Services services={services} />
       <Experience experiences={experiences} />
-      <Work works={works} />
+      <Work works={works} featured={featured} />
       <Footer />
     </div>
   );
@@ -70,7 +76,7 @@ const Home: NextPage = ({ experiences, services, works, seo }: any) => {
 export default Home;
 
 export const getServerSideProps = async () => {
-  const queryExperiences = `*[_type == "experiences"] {
+  const queryExperiences = `*[_type == "experiences"] | order(order desc) {
     company,
     position,
     period,
@@ -83,13 +89,22 @@ export const getServerSideProps = async () => {
     icon,
   }`;
 
-  const queryWorks = `*[_type == "works"] | order(updatedAt desc) {
+  const queryWorks = `*[_type == "works" && featured != true] | order(updatedAt desc) {
     title,
     description,
     projectLink,
     codeLink,
     featured,
-    imageUrl,
+    imgUrl,
+    tags[],
+  }`;
+
+  const queryFeatured = `*[_type == "works" && featured == true] | order(updatedAt desc) {
+    title,
+    description,
+    projectLink,
+    codeLink,
+    imgUrl,
     tags[],
   }`;
 
@@ -104,9 +119,10 @@ export const getServerSideProps = async () => {
   const services = await client.fetch(queryServices);
   const experiences = await client.fetch(queryExperiences);
   const works = await client.fetch(queryWorks);
+  const featured = await client.fetch(queryFeatured);
   const seo = await client.fetch(querySeo);
 
   return {
-    props: { experiences, services, works, seo },
+    props: { experiences, services, works, featured, seo },
   };
 };

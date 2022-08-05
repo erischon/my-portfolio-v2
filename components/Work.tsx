@@ -3,13 +3,15 @@ import React from "react";
 
 import iconGit from "../public/images/iconGit.png";
 import iconLink from "../public/images/iconLink.png";
+import Featured from "./Featured";
 
-const Work = ({ works }: any) => {
+const Work = ({ works, featured }: any) => {
   return (
     <section className="section" id="Work">
       <div className="container__header">
         <h2>Work</h2>
       </div>
+      <Featured featured={featured} />
       <div className="works__container">
         {works.map((work: any, index: any) => (
           <div key={index} className="work__card">
