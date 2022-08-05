@@ -8,7 +8,7 @@ import iconLink from "../public/images/iconLink.png";
 const Featured = ({ featured }: any) => {
   return (
     <article className="featured" id="Work">
-      <h3 className="featured__title">Dernièrement</h3>
+      <h3 className="featured__title">En avant</h3>
 
       <div className="featured__container">
         <div className="featured__left">
