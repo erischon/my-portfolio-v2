@@ -11,7 +11,9 @@ const Work = ({ works, featured }: any) => {
       <div className="container__header">
         <h2>Work</h2>
       </div>
+
       <Featured featured={featured} />
+
       <div className="works__container">
         {works.map((work: any, index: any) => (
           <div key={index} className="work__card">
