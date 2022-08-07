@@ -75,7 +75,7 @@ const Home: NextPage = ({
 
 export default Home;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const queryExperiences = `*[_type == "experiences"] | order(order desc) {
     company,
     position,
