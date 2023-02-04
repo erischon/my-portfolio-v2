@@ -29,5 +29,13 @@ export default {
       title: "Order",
       type: "number",
     },
+    {
+      name: "published",
+      title: "Published",
+      type: "boolean",
+    },
   ],
+  initialValue: {
+    published: false,
+  },
 };

@@ -76,11 +76,12 @@ const Home: NextPage = ({
 export default Home;
 
 export const getStaticProps = async () => {
-  const queryExperiences = `*[_type == "experiences"] | order(order desc) {
+  const queryExperiences = `*[_type == "experiences" && published == true] | order(order desc) {
     company,
     position,
     period,
     desc[],
+    published,
   }`;
 
   const queryServices = `*[_type == "services"] {
