@@ -1,6 +1,6 @@
 # My Portfolio
 
-Mon Portfolio v2
+Mon Portfolio (v2)
 
 # How to
 
